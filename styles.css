@@ -68,3 +68,14 @@
   .nav nav a{min-height:44px;display:inline-flex;align-items:center}
   .timeline .text-link{min-height:40px;align-content:center}
 }
+
+/* Education stays within the existing background/resume section. */
+.education-link{display:inline-block;margin-top:10px;color:var(--blue);text-decoration:underline;text-decoration-color:#b3c0e5;text-underline-offset:4px}
+.education{margin:0 0 34px;padding-top:0;border-top:0;scroll-margin-top:32px}
+.education h3{font-size:22px;font-weight:550;letter-spacing:-.02em;margin-bottom:24px}
+.education article{padding:20px 0;border-top:1px solid #ffffff23}
+.education h4{font-size:17px;font-weight:550;letter-spacing:-.02em;color:#eef3fc;line-height:1.4}
+.education article p{font-size:12px;line-height:1.65;color:#a9bbd8;margin-top:7px}
+.education article .education-degree{font-size:14px;color:#e3ebf8}
+.education article .education-date{color:#9fb4db;font-size:12px}
+@media(max-width:760px){.education h3{font-size:21px}.education h4{font-size:16px}.education-link{min-height:36px;align-content:center}}
