@@ -21,7 +21,7 @@
       grid.append(item);
     });
     const resume = document.getElementById('primaryResume');
-    resume.href = 'resumes/sizhang-xu-ai-product.pdf?v=20261030-experience';
+    resume.href = 'resumes/sizhang-xu-ai-product.pdf?v=20261029-refined';
     resume.textContent = 'AI product resume';
     if (updateURL) {
       const url = new URL(location.href);

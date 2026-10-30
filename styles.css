@@ -48,3 +48,23 @@
 .authoring-flow{background:#e8edf8;border-radius:14px;padding:35px 40px}.authoring-flow>div{display:flex;align-items:center;gap:13px;margin:24px 0}.authoring-flow>div span{background:#fff;border:1px solid #cbd6ec;border-radius:6px;padding:16px 18px;font-size:15px;font-weight:550;color:#304a7b}.authoring-flow i{font-style:normal;color:#7f93b8}.authoring-flow>p:last-child{font-size:13px}
 @media(max-width:1000px){.authoring-flow>div{flex-wrap:wrap}.authoring-flow>div span{padding:13px;font-size:13px}}
 @media(max-width:760px){.count-distinction{grid-template-columns:1fr}.authoring-flow{padding:25px}.authoring-flow>div{display:grid;grid-template-columns:1fr;gap:8px}.authoring-flow i{text-align:center;transform:rotate(90deg)}.authoring-flow>div span{text-align:center}}
+
+/* Refine the existing reading hierarchy for internship review. */
+.work-section{padding-top:96px}
+.timeline p .experience-question{display:block;color:var(--ink);font-size:19px;font-weight:550;line-height:1.45;letter-spacing:-.02em;margin-bottom:10px}
+.timeline p .experience-contribution{display:block;line-height:1.8}
+.discovery-board{display:grid;grid-template-columns:1fr 1fr;background:var(--soft);border-radius:14px;overflow:hidden}
+.discovery-board>div{padding:38px 40px}
+.discovery-board>div+div{border-left:1px solid #c8d2e8}
+.discovery-board h2{font-size:28px;font-weight:550;line-height:1.2;margin:15px 0}
+.discovery-board p:not(.eyebrow){font-size:15px;max-width:420px}
+@media(max-width:760px){
+  .work-section{padding-top:64px}
+  .timeline p .experience-question{font-size:18px;margin-bottom:9px}
+  .discovery-board{grid-template-columns:1fr}
+  .discovery-board>div{padding:27px}
+  .discovery-board>div+div{border-left:0;border-top:1px solid #c8d2e8}
+  .discovery-board h2{font-size:26px}
+  .nav nav a{min-height:44px;display:inline-flex;align-items:center}
+  .timeline .text-link{min-height:40px;align-content:center}
+}

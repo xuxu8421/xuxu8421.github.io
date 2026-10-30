@@ -14,10 +14,10 @@ Open http://localhost:8000. There is no build step or package installation.
 
 ## Structure
 
-- `index.html`: introduction, selected projects, internships, design gallery, and resume downloads.
+- `index.html`: introduction, internships, selected projects, design gallery, and resume downloads.
 - `styles.css`: shared layout, type, responsive styles, and reduced-motion behavior.
 - `app.js`: engineering/product focus, design gallery, and keyboard interactions.
-- `osa.html`, `alpha.html`, `structgraph.html`, `reader.html`, `evaluation.html`: project case studies.
+- `osa.html`, `alpha.html`, `structgraph.html`, `reader.html`, `evaluation.html`, `authoring.html`, `facephys.html`: project and internship case studies.
 - `assets/`: portfolio images and public sample outputs.
 - `resumes/`: role-specific PDF resumes.
 
