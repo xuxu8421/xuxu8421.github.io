@@ -1,18 +1,17 @@
 (() => {
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const grid = document.querySelector('.project-grid');
   const updateFocusLinks = mode => {
     document.querySelectorAll('a[href]').forEach(link => {
       if (link.getAttribute('href').startsWith('#')) return;
       const url = new URL(link.href);
       if (url.origin !== location.origin || !url.pathname.endsWith('.html')) return;
-      if (mode === 'product') url.searchParams.set('focus', 'product');
+      if (mode === 'engineering') url.searchParams.set('focus', 'engineering');
       else url.searchParams.delete('focus');
       link.href = url.pathname + url.search + url.hash;
     });
   };
   const setFocus = (focus, updateURL = true) => {
-    const mode = focus === 'product' ? 'product' : 'engineering';
+    const mode = focus === 'engineering' ? 'engineering' : 'product';
     updateFocusLinks(mode);
     if (!grid) return;
     document.querySelectorAll('[data-lens]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.lens === mode)));
@@ -22,11 +21,11 @@
       grid.append(item);
     });
     const resume = document.getElementById('primaryResume');
-    resume.href = mode === 'product' ? 'resumes/sizhang-xu-ai-product.pdf' : 'resumes/sizhang-xu-fullstack.pdf';
-    resume.textContent = mode === 'product' ? 'Product resume' : 'Engineering resume';
+    resume.href = 'resumes/sizhang-xu-ai-product.pdf';
+    resume.textContent = 'AI product resume';
     if (updateURL) {
       const url = new URL(location.href);
-      if (mode === 'product') url.searchParams.set('focus', 'product'); else url.searchParams.delete('focus');
+      if (mode === 'engineering') url.searchParams.set('focus', 'engineering'); else url.searchParams.delete('focus');
       history.replaceState(null, '', url);
     }
   };
