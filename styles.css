@@ -79,3 +79,15 @@
 .education article .education-degree{font-size:14px;color:#e3ebf8}
 .education article .education-date{color:#9fb4db;font-size:12px}
 @media(max-width:760px){.education h3{font-size:21px}.education h4{font-size:16px}.education-link{min-height:36px;align-content:center}}
+
+/* Education highlights lead the introduction; full entries remain below. */
+.hero-education{margin:0 0 21px;max-width:460px}
+.hero-education>a{display:inline-grid;gap:3px;color:var(--ink)}
+.hero-education strong{font-size:23px;line-height:1.25;letter-spacing:-.025em;font-weight:650}
+.hero-education a>span{font-size:14px;line-height:1.5}
+.hero-education a>.hero-education-focus{font-size:13px;color:var(--muted)}
+.hero-education>a:hover strong{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.hero-education>p{font-size:12px;line-height:1.75;color:var(--muted);margin-top:12px}
+.hero-copy .hero-context{margin-top:19px}
+.hero-copy .hero-actions{margin-top:25px}
+@media(max-width:760px){.hero-education{margin-bottom:20px}.hero-education strong{font-size:22px}.hero-education>p{font-size:12px}.hero-copy .hero-context{font-size:12px}}
