@@ -95,3 +95,10 @@
 .hero-copy .hero-context{margin-top:17px}
 .hero-copy .hero-actions{margin-top:25px}
 @media(max-width:760px){.hero-academic{margin-top:20px}.hero-academic p{font-size:12px}.hero-copy .hero-context{font-size:12px}}
+
+/* Product interests and current internship goals in the existing background section. */
+.background-interests{margin:30px 0 38px;scroll-margin-top:32px}
+.background-interests h3{font-size:22px;font-weight:550;letter-spacing:-.02em;margin-bottom:20px;color:#eef3fc}
+.background-interests p{font-size:14px;line-height:1.8;color:#b4c0d6}
+.background-interests p+p{margin-top:16px}
+@media(max-width:760px){.background-interests h3{font-size:21px}}
